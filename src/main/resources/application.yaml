@@ -1,0 +1,23 @@
+quarkus:
+  message: 'default Configuration'
+  flyway:
+    baseline-on-migrate: true
+    migrate-at-start: true
+
+'%hlg':
+  quarkus:
+    message: 'HLG Configuration'
+    datasource:
+      username: postgres
+      password: postgres
+      jdbc:
+        url: jdbc:postgresql://localhost:5432/hlg
+
+'%prd':
+  quarkus:
+    message: 'PRD Configuration'
+    datasource:
+      username: postgres
+      password: postgres
+      jdbc:
+        url: jdbc:postgresql://localhost:5432/prd
